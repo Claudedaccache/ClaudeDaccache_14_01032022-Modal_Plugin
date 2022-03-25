@@ -9,7 +9,7 @@ Open/close and style your own modal in ReactJs.
 Then...
 
 ```
-import ModalContainer from "Modal";
+import { Modal } from "@claudedacc/modal";
 
 const [IsOpen, setIsOpen] = useState(true);
 
