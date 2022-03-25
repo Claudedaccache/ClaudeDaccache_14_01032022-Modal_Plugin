@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 const Modal = ({
   ModalStatus,
   setModalStatus,
-  ModalContainerClass,
-  ModalBodyClass,
-  ModalInnerText,
-  ModalcloseIcon,
+  ModalContainerStyle,
+  ModalBodyStyle,
+  ModalInnerStyle,
+  ModalCloseIconStyle,
   ModalChildren,
 }) => {
   const modalContainer = {
@@ -59,13 +59,13 @@ const Modal = ({
 
   if (ModalStatus === true) {
     return (
-      <div style={ModalContainerClass ? ModalContainerClass : modalContainer}>
-        <div style={ModalBodyClass ? ModalBodyClass : ModalBody}>
-          <div style={ModalInnerText ? ModalInnerText : innerText}>
+      <div style={ModalContainerStyle ? ModalContainerStyle : modalContainer}>
+        <div style={ModalBodyStyle ? ModalBodyStyle : ModalBody}>
+          <div style={ModalInnerStyle ? ModalInnerStyle : innerText}>
             {ModalChildren}
           </div>
           <button
-            style={ModalcloseIcon ? ModalcloseIcon : closeIcon}
+            style={ModalCloseIconStyle ? ModalCloseIconStyle : closeIcon}
             onClick={() => setModalStatus(false)}
           >
             X
