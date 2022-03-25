@@ -13,7 +13,7 @@ import { Modal } from "@claudedacc/modal";
 
 const [IsOpen, setIsOpen] = useState(true);
 
-    <ModalContainer
+    <Modal
         ModalStatus ={IsOpen}
         setModalStatus ={setIsOpen}
         ModalContainerStyle ={{}}
@@ -22,7 +22,7 @@ const [IsOpen, setIsOpen] = useState(true);
         ModalCloseIconStyle ={{}}
         ModalChildren =""
       >
-      </ModalContainer>
+      </Modal>
     </>
 ```
 
