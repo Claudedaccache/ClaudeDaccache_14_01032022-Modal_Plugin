@@ -20,7 +20,7 @@ const [IsOpen, setIsOpen] = useState(true);
         ModalBodyStyle ={{}}
         ModalInnerStyle ={{}}
         ModalCloseIconStyle ={{}}
-        ModalChildren =""
+        ModalChildren ={}
       >
       </Modal>
     </>
