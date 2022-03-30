@@ -1,8 +1,9 @@
 {
   "name": "@claudedacc/modal",
-  "version": "0.2.0",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "version": "0.2.1",
+  "main": "dist/index",
+  "typings": "dist/index",
+  "module": "dist/index",
   "private": false,
   "files": [
     "dist",
