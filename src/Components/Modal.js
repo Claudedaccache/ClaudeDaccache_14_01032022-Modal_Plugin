@@ -10,6 +10,16 @@ const Modal = ({
   ModalCloseIconStyle,
   ModalChildren,
 }) => {
+  Modal.propTypes = {
+    ModalStatus: PropTypes.bool.isRequired,
+    setModalStatus: PropTypes.func.isRequired,
+    ModalContainerStyle: PropTypes.object,
+    ModalBodyStyle: PropTypes.object,
+    ModalInnerStyle: PropTypes.object,
+    ModalCloseIconStyle: PropTypes.object,
+    ModalChildren: PropTypes.string,
+  };
+
   const modalContainer = {
     position: "fixed",
     top: 0,
@@ -76,16 +86,6 @@ const Modal = ({
   } else {
     return null;
   }
-};
-
-Modal.propTypes = {
-  ModalStatus: PropTypes.bool.isRequired,
-  setModalStatus: PropTypes.func.isRequired,
-  ModalContainerStyle: PropTypes.object,
-  ModalBodyStyle: PropTypes.object,
-  ModalInnerStyle: PropTypes.object,
-  ModalCloseIconStyle: PropTypes.object,
-  ModalChildren: PropTypes.string,
 };
 
 export default Modal;
