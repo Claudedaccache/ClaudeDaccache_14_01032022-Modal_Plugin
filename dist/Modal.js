@@ -14,10 +14,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Modal = function Modal(_ref) {
   var ModalStatus = _ref.ModalStatus,
       setModalStatus = _ref.setModalStatus,
-      ModalContainerClass = _ref.ModalContainerClass,
-      ModalBodyClass = _ref.ModalBodyClass,
-      ModalInnerText = _ref.ModalInnerText,
-      ModalcloseIcon = _ref.ModalcloseIcon,
+      ModalContainerStyle = _ref.ModalContainerStyle,
+      ModalBodyStyle = _ref.ModalBodyStyle,
+      ModalInnerStyle = _ref.ModalInnerStyle,
+      ModalCloseIconStyle = _ref.ModalCloseIconStyle,
       ModalChildren = _ref.ModalChildren;
   var modalContainer = {
     position: "fixed",
@@ -65,13 +65,13 @@ var Modal = function Modal(_ref) {
 
   if (ModalStatus === true) {
     return /*#__PURE__*/_react.default.createElement("div", {
-      style: ModalContainerClass ? ModalContainerClass : modalContainer
+      style: ModalContainerStyle ? ModalContainerStyle : modalContainer
     }, /*#__PURE__*/_react.default.createElement("div", {
-      style: ModalBodyClass ? ModalBodyClass : ModalBody
+      style: ModalBodyStyle ? ModalBodyStyle : ModalBody
     }, /*#__PURE__*/_react.default.createElement("div", {
-      style: ModalInnerText ? ModalInnerText : innerText
+      style: ModalInnerStyle ? ModalInnerStyle : innerText
     }, ModalChildren), /*#__PURE__*/_react.default.createElement("button", {
-      style: ModalcloseIcon ? ModalcloseIcon : closeIcon,
+      style: ModalCloseIconStyle ? ModalCloseIconStyle : closeIcon,
       onClick: function onClick() {
         return setModalStatus(false);
       }
@@ -84,9 +84,10 @@ var Modal = function Modal(_ref) {
 Modal.propTypes = {
   ModalStatus: _propTypes.default.bool.isRequired,
   setModalStatus: _propTypes.default.func.isRequired,
-  ModalContainerClass: _propTypes.default.object,
-  ModalBodyClass: _propTypes.default.object,
-  ModalcloseIcon: _propTypes.default.object,
+  ModalContainerStyle: _propTypes.default.object,
+  ModalBodyStyle: _propTypes.default.object,
+  ModalInnerStyle: _propTypes.default.object,
+  ModalCloseIconStyle: _propTypes.default.object,
   ModalChildren: _propTypes.default.string
 };
 var _default = Modal;
