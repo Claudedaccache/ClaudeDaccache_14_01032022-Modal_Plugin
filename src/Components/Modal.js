@@ -78,14 +78,14 @@ const Modal = ({
   }
 };
 
-// Modal.propTypes = {
-//   ModalStatus: PropTypes.bool.isRequired,
-//   setModalStatus: PropTypes.func.isRequired,
-//   ModalContainerStyle: PropTypes.object,
-//   ModalBodyStyle: PropTypes.object,
-//   ModalInnerStyle: PropTypes.object,
-//   ModalCloseIconStyle: PropTypes.object,
-//   ModalChildren: PropTypes.string,
-// };
+Modal.propTypes = {
+  ModalStatus: PropTypes.bool.isRequired,
+  setModalStatus: PropTypes.func.isRequired,
+  ModalContainerStyle: PropTypes.object,
+  ModalBodyStyle: PropTypes.object,
+  ModalInnerStyle: PropTypes.object,
+  ModalCloseIconStyle: PropTypes.object,
+  ModalChildren: PropTypes.string,
+};
 
 export default Modal;
