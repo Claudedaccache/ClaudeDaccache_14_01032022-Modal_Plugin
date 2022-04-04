@@ -1,6 +1,6 @@
 {
-  "name": "@claudedacc/modal",
-  "version": "0.2.6",
+  "name": "simple-modal-component",
+  "version": "0.2.7",
   "main": "dist/index.js",
   "typings": "dist/index.js",
   "module": "dist/index.js",
@@ -15,7 +15,10 @@
   },
   "author": "Claudedacc",
   "keywords": [
-    "ReactJs modal"
+    "ReactJs",
+    "modal",
+    "show",
+    "open"
   ],
   "license": "ISC",
   "bugs": {

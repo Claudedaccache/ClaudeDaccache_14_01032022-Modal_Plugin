@@ -4,12 +4,12 @@ Open/close and style your own modal in ReactJs.
 
 # Installation
 
-'npm i @claudedacc/modal'
+'npm i simple-modal-component'
 
 Then...
 
 ```
-import {Modal} from "@claudedacc/modal";
+import {Modal} from "simple-modal-component";
 
 const [IsOpen, setIsOpen] = useState(true);
 
