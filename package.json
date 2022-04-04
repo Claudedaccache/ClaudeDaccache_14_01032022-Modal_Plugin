@@ -1,6 +1,6 @@
 {
   "name": "simple-modal-component",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "main": "dist/index.js",
   "typings": "dist/index.js",
   "module": "dist/index.js",
@@ -11,18 +11,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Claudedaccache/Modal_Plugin.git"
+    "url": "https://github.com/Claudedaccache/ClaudeDaccache_14_01032022-Modal_Plugin.git"
   },
   "author": "Claudedacc",
   "keywords": [
     "ReactJs",
     "modal",
     "show",
-    "open"
+    "open",
+    "simple", "style", "children"
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Claudedaccache/Modal_Plugin.git"
+    "url": "https://github.com/Claudedaccache/ClaudeDaccache_14_01032022-Modal_Plugin.git"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
